@@ -2,6 +2,10 @@
 # Copyright (c) 2019-2020 Christian Hesse <mail@eworm.de>
 # https://git.eworm.de/cgit/routeros-scripts/about/COPYING.md
 
+# TODO: Remove on 2021-09-30
+:global CertificateAvailable
+$CertificateAvailable "Let's Encrypt Authority X3";
+
 # Changes for global-config to be added to notification on script updates
 :global GlobalConfigChanges {
    1="Moved variables from 'global-config' to 'global-functions' for independence";
@@ -40,4 +44,5 @@
   34="Introduced script 'ospf-to-leds' to visualize OSPF instance state via LEDs.";
   35="Implemented visual feedback for 'mode-button' with configurable LED.";
   36="Added support for installing updates automatically if seen in neighbor list.";
+  37="Updated Let's Encrypt trust chain.";
 };
